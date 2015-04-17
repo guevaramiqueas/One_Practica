@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#ff000000">
+
+    <CheckBox android:id="@+id/ChkMarcame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/marcame"
+        android:checked="false"
+        android:background="#ffffc753" />
+
+    <TextView android:id="@+id/LblSeleccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/id_opcion_seleccionada"
+        android:background="#ff3effe0" />
+
+    <RadioGroup android:id="@+id/GrbGrupo1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RadioButton android:id="@+id/RbOpcion1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opcion_1"
+            android:background="#fffffc30"
+            android:layout_gravity="center_horizontal" />
+
+        <RadioButton android:id="@+id/RbOpcion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opcion_2"
+            android:background="#fffcff23"
+            android:layout_gravity="right" />
+
+    </RadioGroup>
+
+</LinearLayout>
